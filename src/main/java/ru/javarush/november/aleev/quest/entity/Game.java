@@ -1,0 +1,19 @@
+package ru.javarush.november.aleev.quest.entity;
+
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import java.time.LocalDateTime;
+
+@Data
+@EqualsAndHashCode
+@Builder
+public class Game extends AbstractEntity{
+    Long id;
+    String userName;
+    LocalDateTime startTime;
+    Long currentQuestionId;
+    Long questId;
+    GameState state;
+}
