@@ -10,6 +10,10 @@ public class GameRepository extends AbstractRepository<Game> implements Reposito
 
     public GameRepository(){}
 
+    public static GameRepository get() {
+        return gameRepository;
+    }
+
     @Override
     public Stream<Game> find(Game pattern) {
         return map.values().stream()
