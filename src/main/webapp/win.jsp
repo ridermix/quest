@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%-- TO DO - style don't work   --%>
     <style>
         .green {
             color: green;

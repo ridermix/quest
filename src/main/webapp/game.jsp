@@ -1,9 +1,11 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <head>
-    <title>Игра</title>
+    <title>Game</title>
 </head>
 <body>
-
+<%--TO DO - CSS--%>
 <form class="form-horizontal" action="game" method="get">
     <div class="form-group">
         <div class="col-md-4">

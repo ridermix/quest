@@ -5,6 +5,8 @@
 <html>
 <head>
     <title>JavaRush Quest</title>
+
+    <%-- TO DO - style don't work   --%>
 </head>
 <body>
 <br>
