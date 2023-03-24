@@ -12,9 +12,9 @@ public enum AnswerService {
 
     private final Repository<Answer> answerRepository = AnswerRepository.get();
 
-    public Collection<Answer> getAll(){
-        return answerRepository.getAll().collect(Collectors.toList());
-    }
+//    public Collection<Answer> getAll(){
+//        return answerRepository.getAll().collect(Collectors.toList());
+//    }
 
     public Answer get(Long id){
         return answerRepository.get(id);
