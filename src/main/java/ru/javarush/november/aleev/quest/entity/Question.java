@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 import java.util.Collection;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 @Builder
 public class Question extends AbstractEntity{
     Long id;

@@ -7,11 +7,11 @@ import lombok.EqualsAndHashCode;
 import java.util.Collection;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 @Builder
 public class Quest extends AbstractEntity{
     Long id;
     String name;
-    String authorId;
+//    String authorId;
     Collection<Question> questions;
 }

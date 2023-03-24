@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.stream.Collectors;
 
 @WebServlet(name = "createServlet", value = "/create")
 public class CreateServlet extends HttpServlet {
@@ -23,6 +22,7 @@ public class CreateServlet extends HttpServlet {
         } else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("/game");
             requestDispatcher.forward(req, resp);
+
         }
     }
 

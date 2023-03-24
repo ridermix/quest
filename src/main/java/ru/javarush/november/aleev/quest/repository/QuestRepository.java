@@ -17,7 +17,6 @@ public class QuestRepository extends AbstractRepository<Quest> implements Reposi
     public Stream<Quest> find(Quest pattern) {
         return map.values().stream()
                 .filter(entity -> isOk(pattern, entity, Quest::getId)
-                && isOk(pattern, entity, Quest::getAuthorId)
                 && isOk(pattern, entity, Quest::getName)
         )
                 .sorted(Comparator.comparingLong(Quest::getId));

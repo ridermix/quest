@@ -5,12 +5,12 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 @Builder
 public class Answer extends AbstractEntity{
     Long id;
     String text;
-    Boolean isCorrect;
+    Boolean correct;
     Long questionId;
     Long nextQuestionId;
 
