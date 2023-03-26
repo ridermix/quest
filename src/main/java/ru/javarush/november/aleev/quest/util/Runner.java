@@ -49,17 +49,8 @@ public class Runner {
         Question question5 = Question.builder()
                 .id(5L)
                 .questId(1L)
-                .text("Game over!").build();
+                .text("GAME OVER!").build();
 
-        Question question6 = Question.builder()
-                .id(6L)
-                .questId(1L)
-                .text("Game over!").build();
-
-        Question question7 = Question.builder()
-                .id(7L)
-                .questId(1L)
-                .text("Game over!").build();
 
 
 // 1L "Принять вызов НЛО?"
@@ -85,7 +76,7 @@ public class Runner {
                 .id(4L)
                 .correct(false)
                 .text("Отказаться подниматься на мостик")
-                .nextQuestionId(6L).build();
+                .nextQuestionId(5L).build();
 // 3L "Ты кто?"
         Answer answer5 = Answer.builder()
                 .questionId(3L)
@@ -97,7 +88,7 @@ public class Runner {
                 .id(6L)
                 .correct(false)
                 .text("Солгать о себе")
-                .nextQuestionId(7L).build();
+                .nextQuestionId(5L).build();
 
         question1.setAnswers(new HashSet<>());
         question1.getAnswers().add(answer1);
@@ -117,8 +108,7 @@ public class Runner {
         quest1.getQuestions().add(question3);
         quest1.getQuestions().add(question4);
         quest1.getQuestions().add(question5);
-        quest1.getQuestions().add(question6);
-        quest1.getQuestions().add(question7);
+
 
         questRepository.update(quest1);
 
@@ -127,8 +117,7 @@ public class Runner {
         questionRepository.update(question3);
         questionRepository.update(question4);
         questionRepository.update(question5);
-        questionRepository.update(question6);
-        questionRepository.update(question7);
+
 
         answerRepository.update(answer1);
         answerRepository.update(answer2);
