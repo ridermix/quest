@@ -67,6 +67,7 @@ public class GameServlet extends HttpServlet {
             }
         }
 
+        assert answers != null;
         req.setAttribute("answer1", answers.stream().collect(Collectors.toList()).get(0).getText());
         req.setAttribute("answer2", answers.stream().collect(Collectors.toList()).get(1).getText());
     }

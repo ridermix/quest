@@ -12,6 +12,5 @@ import java.util.Collection;
 public class Quest extends AbstractEntity{
     Long id;
     String name;
-//    String authorId;
     Collection<Question> questions;
 }

@@ -4,7 +4,6 @@ import ru.javarush.november.aleev.quest.entity.Game;
 import ru.javarush.november.aleev.quest.entity.GameState;
 import ru.javarush.november.aleev.quest.repository.GameRepository;
 import ru.javarush.november.aleev.quest.repository.Repository;
-
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -22,9 +21,9 @@ public enum GameService {
         return gameRepository.get(id);
     }
 
-    public void update(Game game){
-        gameRepository.update(game);
-    }
+//    public void update(Game game){
+//        gameRepository.update(game);
+//    }
 
     public Long create(String name){
         Game game = Game.builder()
@@ -37,7 +36,7 @@ public enum GameService {
         return gameRepository.create(game);
     }
 
-    public void delete(Game game){
-        gameRepository.delete(game);
-    }
+//    public void delete(Game game){
+//        gameRepository.delete(game);
+//    }
 }

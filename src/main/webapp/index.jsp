@@ -53,39 +53,24 @@
 <br>
 <form class="form-horizontal" action="create" method="get" >
     <div class="container">
-<%--        <label class="col-md-4 control-label" for="name">Имя:</label>--%>
 
     <div class="col-md-4">
             <div  class="g-4 py-5 row-cols-1 row-cols-lg-3" >
                 <input id="name" name="name" type="text" placeholder="Введите имя" class="form-control input-md">
             </div>
-<%--            <br>--%>
+
             <div class="container">
                 <label class="col-md-4 control-label" for="submit"></label>
                 <div class="col-md-4">
                     <button id="submit" class="btn btn-success">Представиться</button>
                     <br/>
                     <br/>
+                    Дата прохождения квеста: <%= new java.util.Date()%>
                 </div>
             </div>
         </div>
     </div>
 </form>
-
-
-<%--<div class="container">--%>
-<%--    <div class="row">--%>
-<%--        <div class="col">--%>
-<%--            <input id="name" name="name" type="text" placeholder="Введите имя" class="form-control input-md">--%>
-<%--        </div>--%>
-<%--        <div class="col">--%>
-<%--            <label class="col-md-4 control-label" for="submit"></label>--%>
-<%--            <button id="submit" class="btn btn-success">Представиться</button>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</div>--%>
-
-
 
 </body>
 </html>
